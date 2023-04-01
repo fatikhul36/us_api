@@ -21,9 +21,6 @@ module.exports =(sequelize,Sequelize) =>{
         categoryid: {
             type: Sequelize.INTEGER,
         },
-        levelid: {
-            type: Sequelize.INTEGER,
-        },
     });
     return Quiz;
 }
