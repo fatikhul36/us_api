@@ -16,4 +16,4 @@ app.get('/', (req,res) => {
 
 app.use('/api/quizzes',quizRoute);
 
-app.listen(port,() => console.log('running'));
+app.listen(() => console.log('running'));
