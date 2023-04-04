@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 5000;
 const quizRoute= require('./router/quiz');
 
 app.use(cors());
@@ -17,4 +16,4 @@ app.get('/', (req,res) => {
 
 app.use('/api/quizzes',quizRoute);
 
-app.listen(port,() => console.log('App listening on port http://localhost:5000!'));
+app.listen(port,() => console.log('running'));
