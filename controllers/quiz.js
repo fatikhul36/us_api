@@ -4,7 +4,7 @@ const Quiz = db.quizzes;
 //READ : menampilkan data quiz sesuai model dari databas
 exports.getAll = async(req, res) => {
     try {
-        const categoryId = req.query.categoryId;
+        const categoryId = req.params.categoryId;
     const questions = await Quiz.findAll({ where: { categoryid: categoryId } });
     res.json(questions.map((question) => {
       return {
